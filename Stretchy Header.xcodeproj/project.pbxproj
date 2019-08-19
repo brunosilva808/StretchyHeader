@@ -14,6 +14,7 @@
 		463242AD230AE58D00D6864D /* Stretchy_HeaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463242AC230AE58D00D6864D /* Stretchy_HeaderUITests.swift */; };
 		463242BB230AE85A00D6864D /* StretchyHeaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463242BA230AE85A00D6864D /* StretchyHeaderController.swift */; };
 		463242BF230AEFB800D6864D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463242BE230AEFB800D6864D /* HeaderView.swift */; };
+		46AD839A230B0277003A4CC4 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AD8399230B0277003A4CC4 /* Extensions+UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		463242AE230AE58D00D6864D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		463242BA230AE85A00D6864D /* StretchyHeaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderController.swift; sourceTree = "<group>"; };
 		463242BE230AEFB800D6864D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		46AD8399230B0277003A4CC4 /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				4632428C230AE58C00D6864D /* AppDelegate.swift */,
 				463242BA230AE85A00D6864D /* StretchyHeaderController.swift */,
+				46AD8399230B0277003A4CC4 /* Extensions+UIView.swift */,
 				46324293230AE58D00D6864D /* Assets.xcassets */,
 				46324295230AE58D00D6864D /* LaunchScreen.storyboard */,
 				46324298230AE58D00D6864D /* Info.plist */,
@@ -257,6 +260,7 @@
 			files = (
 				463242BB230AE85A00D6864D /* StretchyHeaderController.swift in Sources */,
 				463242BF230AEFB800D6864D /* HeaderView.swift in Sources */,
+				46AD839A230B0277003A4CC4 /* Extensions+UIView.swift in Sources */,
 				4632428D230AE58C00D6864D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

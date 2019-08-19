@@ -10,11 +10,18 @@ import UIKit
 
 class HeaderView: UICollectionReusableView {
     
+    let imageView: UIImageView = {
+        let iv = UIImageView(image: #imageLiteral(resourceName: "stretchy_header"))
+        iv.contentMode = .scaleAspectFill
+        return iv
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         // custom code for lauyout
         
-        self.backgroundColor = .red
+        addSubview(self.imageView)
+        self.imageView.fillSuperview()
     }
     
     required init?(coder aDecoder: NSCoder) {
