@@ -15,6 +15,7 @@
 		463242BB230AE85A00D6864D /* StretchyHeaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463242BA230AE85A00D6864D /* StretchyHeaderController.swift */; };
 		463242BF230AEFB800D6864D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463242BE230AEFB800D6864D /* HeaderView.swift */; };
 		46AD839A230B0277003A4CC4 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AD8399230B0277003A4CC4 /* Extensions+UIView.swift */; };
+		46AD83A1230B059B003A4CC4 /* StretchyHeaderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AD83A0230B059B003A4CC4 /* StretchyHeaderLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		463242BA230AE85A00D6864D /* StretchyHeaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderController.swift; sourceTree = "<group>"; };
 		463242BE230AEFB800D6864D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		46AD8399230B0277003A4CC4 /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
+		46AD83A0230B059B003A4CC4 /* StretchyHeaderLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +102,11 @@
 			isa = PBXGroup;
 			children = (
 				4632428C230AE58C00D6864D /* AppDelegate.swift */,
-				463242BA230AE85A00D6864D /* StretchyHeaderController.swift */,
-				46AD8399230B0277003A4CC4 /* Extensions+UIView.swift */,
-				46324293230AE58D00D6864D /* Assets.xcassets */,
-				46324295230AE58D00D6864D /* LaunchScreen.storyboard */,
-				46324298230AE58D00D6864D /* Info.plist */,
-				463242BE230AEFB800D6864D /* HeaderView.swift */,
+				46AD839D230B0552003A4CC4 /* View */,
+				46AD839B230B0501003A4CC4 /* Controller */,
+				46AD839F230B057D003A4CC4 /* Custom */,
+				46AD839C230B0507003A4CC4 /* Extensions */,
+				46AD839E230B056B003A4CC4 /* Resources */,
 			);
 			path = "Stretchy Header";
 			sourceTree = "<group>";
@@ -126,6 +127,48 @@
 				463242AE230AE58D00D6864D /* Info.plist */,
 			);
 			path = "Stretchy HeaderUITests";
+			sourceTree = "<group>";
+		};
+		46AD839B230B0501003A4CC4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				463242BA230AE85A00D6864D /* StretchyHeaderController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		46AD839C230B0507003A4CC4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				46AD8399230B0277003A4CC4 /* Extensions+UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		46AD839D230B0552003A4CC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				463242BE230AEFB800D6864D /* HeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46AD839E230B056B003A4CC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				46324293230AE58D00D6864D /* Assets.xcassets */,
+				46324295230AE58D00D6864D /* LaunchScreen.storyboard */,
+				46324298230AE58D00D6864D /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		46AD839F230B057D003A4CC4 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				46AD83A0230B059B003A4CC4 /* StretchyHeaderLayout.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +304,7 @@
 				463242BB230AE85A00D6864D /* StretchyHeaderController.swift in Sources */,
 				463242BF230AEFB800D6864D /* HeaderView.swift in Sources */,
 				46AD839A230B0277003A4CC4 /* Extensions+UIView.swift in Sources */,
+				46AD83A1230B059B003A4CC4 /* StretchyHeaderLayout.swift in Sources */,
 				4632428D230AE58C00D6864D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,7 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Stretchy Header/Info.plist";
+				INFOPLIST_FILE = "Stretchy Header/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +490,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Stretchy Header/Info.plist";
+				INFOPLIST_FILE = "Stretchy Header/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
