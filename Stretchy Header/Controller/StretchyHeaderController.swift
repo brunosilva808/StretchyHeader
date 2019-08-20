@@ -44,13 +44,25 @@ class StretchyHeaderController: UICollectionViewController, UICollectionViewDele
         return .init(width: view.frame.width - 2 * self.padding, height: 50)
     }
     
+    var headerView: HeaderView!
+    
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: self.headerId, for: indexPath)
+        self.headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: self.headerId, for: indexPath) as? HeaderView
         return headerView
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return .init(width: view.frame.width, height: 340)
+    }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let contentOffsetY = scrollView.contentOffset.y
+        if contentOffsetY > 0 {
+            headerView.animator.fractionComplete = 0
+            return
+        }
+        
+        headerView.animator.fractionComplete = abs(contentOffsetY) / 100
     }
     
 }
